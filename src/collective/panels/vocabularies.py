@@ -11,8 +11,12 @@ class ManagerVocabulary(object):
     # Order is important here; the default location will be the first
     # available (non-hidden) manager.
     all_viewlet_managers = (
-        (interfaces.IBelowContentBody, _(u"Below page content")),
-        (interfaces.IAboveContentBody, _(u"Above page content")),
+        (interfaces.IBelowContentBody, _(u"Below body content")),
+        (interfaces.IAboveContentBody, _(u"Above body content")),
+
+        (interfaces.IBelowContent, _(u"Below all content")),
+        (interfaces.IAboveContent, _(u"Above all content")),
+
         (interfaces.IPortalFooter, _(u"Portal footer")),
         (interfaces.IPortalTop, _(u"Portal top")),
     )
